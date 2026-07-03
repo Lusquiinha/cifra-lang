@@ -17,7 +17,6 @@ semântica e geração de código.
 
 ## 🎬 Vídeo demonstrativo
 
-> _(Adicione aqui o link do vídeo curto apresentando a linguagem.)_
 
 ---
 
