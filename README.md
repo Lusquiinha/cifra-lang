@@ -140,6 +140,10 @@ Erros semanticos encontrados:
 
 ## A linguagem
 
+> 📖 **Guia completo, parte a parte:** [`docs/GUIA.md`](docs/GUIA.md) — explica
+> cada construção da linguagem em detalhe, com exemplos e referência rápida. A
+> seção abaixo é um resumo.
+
 Um programa Cifra tem três partes, nesta ordem: **configurações**, **frases** e o
 bloco **`musica`**.
 
@@ -306,6 +310,8 @@ erro sintático).
 ```
 cifra/
 ├── README.md                 # esta documentação
+├── docs/
+│   └── GUIA.md               # guia completo da linguagem, parte a parte
 ├── requirements.txt          # dependências Python
 ├── gerar_parser.sh           # regera o parser a partir da gramática (precisa do ANTLR)
 ├── cifra.py                  # lançador do compilador
