@@ -289,8 +289,6 @@ executado, sintetiza cada trilha, soma-as e grava o arquivo de áudio.
 | `exemplos/duas_trilhas.cifra` | duas trilhas simultâneas (flauta + baixo) |
 | `exemplos/marcas.cifra` | marcas de tempo (piano entra depois do violão) |
 | `exemplos/banda.cifra` | banda completa (guitarra, baixo, piano e bateria) com volume |
-| `exemplos/fur_elise.cifra` | "Für Elise", de Beethoven (domínio público) — tema principal |
-| `exemplos/rei_da_montanha.cifra` | "Na Caverna do Rei da Montanha", de Grieg (domínio público) — banda completa |
 | `exemplos/inverno.cifra` | "Inverno" (Vivaldi, domínio público) — cordas entrando com marcas de tempo |
 
 ## Casos de teste
