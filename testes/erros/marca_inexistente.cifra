@@ -1,0 +1,8 @@
+// ERRO ESPERADO: 'espere intro' referencia uma marca que nunca foi definida.
+compasso 4/4
+musica {
+  trilha piano {
+    espere intro
+    do4:4 re4:4 mi4:4 fa4:4 |
+  }
+}

@@ -1,0 +1,15 @@
+// Progressao de acordes (I - IV - V - I) em do maior, com orgao.
+tempo 90
+instrumento orgao
+compasso 4/4
+
+frase cadencia {
+  [do4 mi4 sol4]:2 [fa4 la4 do5]:2 |
+  [sol4 si4 re5]:2 [do4 mi4 sol4]:2 |
+}
+
+musica {
+  repita 2 {
+    toca cadencia
+  }
+}

@@ -1,0 +1,9 @@
+// Melodia em la menor: todas as notas pertencem a escala.
+tempo 110
+instrumento corda
+tom la menor
+compasso 3/4
+musica {
+  la4:4 si4:4 do5:4 |
+  re5:4 mi5:4 fa5:4 |
+}

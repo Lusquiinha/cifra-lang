@@ -1,0 +1,29 @@
+// "Brilha, Brilha, Estrelinha" (Twinkle, Twinkle, Little Star)
+// Demonstra: configuracoes, frases reutilizaveis, repita e barras de compasso.
+
+tempo 150
+instrumento piano
+tom do maior
+compasso 4/4
+
+// Verso principal da melodia (4 compassos).
+frase verso {
+  do4:4 do4:4 sol4:4 sol4:4 |
+  la4:4 la4:4 sol4:2 |
+  fa4:4 fa4:4 mi4:4 mi4:4 |
+  re4:4 re4:4 do4:2 |
+}
+
+// Ponte que se repete ("...como eu quero ver voce...").
+frase ponte {
+  sol4:4 sol4:4 fa4:4 fa4:4 |
+  mi4:4 mi4:4 re4:2 |
+}
+
+musica {
+  toca verso
+  repita 2 {
+    toca ponte
+  }
+  toca verso
+}

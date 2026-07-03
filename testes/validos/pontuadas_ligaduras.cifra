@@ -1,0 +1,9 @@
+// Figuras pontuadas (.) e ligaduras (~).
+// Compasso 1: (colcheia pontuada + semicolcheia = 1 tempo) x2 + mínima.
+// Compasso 2: semínima ligada a semínima (= mínima) + mínima.
+tempo 120
+compasso 4/4
+musica {
+  do5:8. re5:16 mi5:8. fa5:16 sol5:2 |
+  do5:4~4 mi5:2 |
+}

@@ -1,0 +1,5 @@
+// ERRO ESPERADO: duracao 1/3 nao e uma figura valida.
+compasso 4/4
+musica {
+  do4:3 do4:4 do4:4 do4:4 |
+}

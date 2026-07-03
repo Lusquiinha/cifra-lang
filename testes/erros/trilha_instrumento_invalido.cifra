@@ -1,0 +1,11 @@
+// ERRO ESPERADO: instrumento 'saxofone' (em uma trilha) nao e suportado.
+tempo 120
+compasso 4/4
+musica {
+  trilha piano {
+    do4:4 re4:4 mi4:4 fa4:4 |
+  }
+  trilha saxofone {
+    do4:4 re4:4 mi4:4 fa4:4 |
+  }
+}

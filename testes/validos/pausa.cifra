@@ -1,0 +1,7 @@
+// Uso de pausas (silencios) entre notas.
+tempo 120
+instrumento piano
+compasso 4/4
+musica {
+  do4:4 pausa:4 mi4:4 pausa:4 |
+}

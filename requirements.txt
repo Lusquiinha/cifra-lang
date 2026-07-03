@@ -1,0 +1,4 @@
+# Dependencias de execucao do compilador Cifra.
+antlr4-python3-runtime==4.13.2
+# numpy e necessario apenas para RODAR o script Python gerado (sintese do WAV).
+numpy>=1.20

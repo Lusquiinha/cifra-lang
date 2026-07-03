@@ -1,0 +1,14 @@
+// Marca definida numa trilha que aparece DEPOIS da que a espera.
+// A resolucao de marcas e global (independente da ordem das trilhas).
+compasso 4/4
+musica {
+  trilha piano {
+    espere entrada
+    do5:4 re5:4 mi5:4 fa5:4 |
+  }
+  trilha violao {
+    do4:4 do4:4 do4:4 do4:4 |
+    marca entrada
+    sol4:4 sol4:4 sol4:4 sol4:4 |
+  }
+}

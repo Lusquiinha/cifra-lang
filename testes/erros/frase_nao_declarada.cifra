@@ -1,0 +1,6 @@
+// ERRO ESPERADO: frase 'refrao' nao declarada.
+tempo 120
+compasso 4/4
+musica {
+  toca refrao
+}

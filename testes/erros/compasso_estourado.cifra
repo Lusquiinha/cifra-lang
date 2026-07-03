@@ -1,0 +1,6 @@
+// ERRO ESPERADO: compasso excede a capacidade 4/4 (5 seminimas = 1.25 > 1.0).
+tempo 120
+compasso 4/4
+musica {
+  do4:4 re4:4 mi4:4 fa4:4 sol4:4 |
+}

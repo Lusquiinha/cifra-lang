@@ -1,0 +1,5 @@
+// ERRO ESPERADO: frase 'tema' declarada duas vezes.
+compasso 4/4
+frase tema { do4:4 re4:4 mi4:4 fa4:4 | }
+frase tema { sol4:4 la4:4 si4:4 do5:4 | }
+musica { toca tema }

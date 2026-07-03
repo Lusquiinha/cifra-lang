@@ -1,0 +1,10 @@
+// ERRO ESPERADO: 'marca' nao pode aparecer dentro de repita.
+compasso 4/4
+musica {
+  trilha piano {
+    repita 2 {
+      marca aqui
+      do4:4 re4:4 mi4:4 fa4:4 |
+    }
+  }
+}

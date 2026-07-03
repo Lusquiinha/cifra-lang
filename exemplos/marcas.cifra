@@ -1,0 +1,22 @@
+// Marcas de tempo: o piano so entra depois da introducao do violao.
+// O violao toca uma introducao e, no ponto "entra_piano", os dois seguem juntos.
+tempo 120
+compasso 4/4
+
+musica {
+  trilha violao {
+    // Introducao sozinho (2 compassos).
+    do4:4 mi4:4 sol4:4 mi4:4 |
+    do4:4 mi4:4 sol4:4 mi4:4 |
+    marca entra_piano
+    // Daqui em diante toca junto com o piano.
+    do4:2 sol4:2 |
+    do4:2 sol4:2 |
+  }
+  trilha piano {
+    // Fica em silencio ate a marca deixada pelo violao.
+    espere entra_piano
+    do5:4 re5:4 mi5:4 sol5:4 |
+    mi5:4 re5:4 do5:2 |
+  }
+}

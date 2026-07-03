@@ -1,0 +1,6 @@
+// ERRO ESPERADO: repita com 0 repeticoes.
+compasso 4/4
+frase t { do4:4 re4:4 mi4:4 fa4:4 | }
+musica {
+  repita 0 { toca t }
+}

@@ -1,0 +1,6 @@
+// ERRO ESPERADO: fa#4 nao pertence a do maior.
+tom do maior
+compasso 4/4
+musica {
+  do4:4 re4:4 fa#4:4 sol4:4 |
+}

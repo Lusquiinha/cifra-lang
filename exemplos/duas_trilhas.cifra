@@ -1,0 +1,23 @@
+// Duas trilhas tocando ao mesmo tempo: melodia (flauta) sobre um baixo.
+// Demonstra o uso de mais de um instrumento na mesma musica.
+tempo 120
+compasso 4/4
+
+frase baixo_base {
+  do3:2 sol3:2 |
+  fa3:2 sol3:2 |
+}
+
+musica {
+  trilha flauta {
+    repita 2 {
+      do5:4 re5:4 mi5:4 sol5:4 |
+      mi5:4 re5:4 do5:2 |
+    }
+  }
+  trilha baixo {
+    repita 2 {
+      toca baixo_base
+    }
+  }
+}

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.wav
+venv/
+# Scripts Python gerados pelo compilador (guardamos apenas os fontes .cifra)
+exemplos/*.py
+saida.py
+# Transcricao de obra protegida (nao publicar)
+exemplos/megalovania.cifra

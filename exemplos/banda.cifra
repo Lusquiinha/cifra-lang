@@ -1,0 +1,58 @@
+// Peca instrumental ORIGINAL de rock alternativo (nao e nenhuma musica existente).
+// Demonstra banda completa: guitarra, baixo, piano e bateria (em duas trilhas de
+// percussao), com volume por trilha. Progressao em la menor: Am - F - C - G.
+tempo 100
+tom la menor
+compasso 4/4
+
+// --- Acompanhamento de piano: um acorde por compasso ---
+frase acordes_piano {
+  [la3 do4 mi4]:1 |
+  [fa3 la3 do4]:1 |
+  [do4 mi4 sol4]:1 |
+  [sol3 si3 re4]:1 |
+}
+
+// --- Baixo: fundamental de cada acorde, em minimas ---
+frase linha_baixo {
+  la2:2 la2:2 |
+  fa2:2 fa2:2 |
+  do3:2 do3:2 |
+  sol2:2 sol2:2 |
+}
+
+// --- Guitarra: arpejos em colcheias sobre os mesmos acordes ---
+frase riff_guitarra {
+  la3:8 mi4:8 la4:8 mi4:8 do4:8 mi4:8 la4:8 mi4:8 |
+  fa3:8 do4:8 fa4:8 do4:8 la3:8 do4:8 fa4:8 do4:8 |
+  do4:8 sol4:8 do5:8 sol4:8 mi4:8 sol4:8 do5:8 sol4:8 |
+  sol3:8 re4:8 sol4:8 re4:8 si3:8 re4:8 sol4:8 re4:8 |
+}
+
+// --- Bateria: chimbal marcando as colcheias ---
+frase batida_chimbal {
+  chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 |
+}
+
+// --- Bateria: bumbo e caixa alternados nos tempos ---
+frase batida_grave {
+  bumbo:4 caixa:4 bumbo:4 caixa:4 |
+}
+
+musica {
+  trilha piano volume 70 {
+    repita 2 { toca acordes_piano }
+  }
+  trilha violao volume 65 {
+    repita 2 { toca riff_guitarra }
+  }
+  trilha baixo volume 90 {
+    repita 2 { toca linha_baixo }
+  }
+  trilha bateria volume 75 {
+    repita 8 { toca batida_chimbal }
+  }
+  trilha bateria volume 100 {
+    repita 8 { toca batida_grave }
+  }
+}

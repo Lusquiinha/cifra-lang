@@ -1,0 +1,7 @@
+// ERRO ESPERADO: volume 150 fora da faixa 0-100.
+compasso 4/4
+musica {
+  trilha piano volume 150 {
+    do4:4 re4:4 mi4:4 fa4:4 |
+  }
+}

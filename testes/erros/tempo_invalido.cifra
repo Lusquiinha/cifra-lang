@@ -1,0 +1,6 @@
+// ERRO ESPERADO: tempo 0 fora da faixa permitida.
+tempo 0
+compasso 4/4
+musica {
+  do4:4 re4:4 mi4:4 fa4:4 |
+}

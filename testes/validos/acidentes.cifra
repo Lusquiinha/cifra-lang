@@ -1,0 +1,7 @@
+// Notas com acidentes (sustenido e bemol), sem declarar tom (sem checagem de escala).
+tempo 120
+instrumento violao
+compasso 4/4
+musica {
+  do4:4 do#4:4 re4:4 mib4:4 |
+}

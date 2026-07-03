@@ -1,0 +1,8 @@
+// Staccato (!): a nota soa curta, mas o tempo ate a proxima nao muda.
+// O compasso continua somando 4/4 normalmente.
+tempo 120
+compasso 4/4
+musica {
+  do4:4! do4:4! sol4:4! sol4:4! |
+  la4:8! la4:8! sol4:4 mi4:2 |
+}

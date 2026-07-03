@@ -1,0 +1,55 @@
+// "Inverno" (L'inverno), 1o movimento, das "Quatro Estacoes" de Antonio Vivaldi
+// (1725). Obra em DOMINIO PUBLICO. Arranjo em la menor (transposto para evitar
+// bemois) da abertura: as cordas entram uma a uma, "tremendo" de frio (notas
+// staccato repetidas), formando o acorde de la menor; depois vem a tempestade
+// (uma escala rapida). As entradas sucessivas usam as marcas de tempo.
+tempo 120
+tom la menor
+compasso 4/4
+
+// "Tremor" de frio: uma nota staccato repetida por um compasso inteiro.
+frase treme_la {
+  la4:16 pausa:16 la4:16 pausa:16 la4:16 pausa:16 la4:16 pausa:16 la4:16 pausa:16 la4:16 pausa:16 la4:16 pausa:16 la4:16 pausa:16 |
+}
+frase treme_do {
+  do5:16 pausa:16 do5:16 pausa:16 do5:16 pausa:16 do5:16 pausa:16 do5:16 pausa:16 do5:16 pausa:16 do5:16 pausa:16 do5:16 pausa:16 |
+}
+frase treme_mi {
+  mi5:16 pausa:16 mi5:16 pausa:16 mi5:16 pausa:16 mi5:16 pausa:16 mi5:16 pausa:16 mi5:16 pausa:16 mi5:16 pausa:16 mi5:16 pausa:16 |
+}
+
+// A tempestade: escala de la menor subindo e descendo em semicolcheias.
+frase tempestade {
+  la4:16 si4:16 do5:16 re5:16 mi5:16 fa5:16 sol5:16 la5:16 sol5:16 fa5:16 mi5:16 re5:16 do5:16 si4:16 la4:16 mi5:16 |
+}
+
+musica {
+  // Primeira voz: comeca sozinha e deixa marcas para as outras entrarem.
+  trilha corda volume 70 {
+    toca treme_la
+    marca entra_do
+    toca treme_la
+    marca entra_mi
+    toca treme_la
+    toca treme_la
+  }
+  // Segunda voz: entra no acorde quando a marca "entra_do" e alcancada.
+  trilha corda volume 70 {
+    espere entra_do
+    toca treme_do
+    toca treme_do
+    toca treme_do
+  }
+  // Terceira voz: completa o acorde de la menor.
+  trilha corda volume 70 {
+    espere entra_mi
+    toca treme_mi
+    toca treme_mi
+  }
+  // O violino solo irrompe com a tempestade sobre o acorde ja formado.
+  trilha violao volume 100 {
+    espere entra_mi
+    toca tempestade
+    toca tempestade
+  }
+}

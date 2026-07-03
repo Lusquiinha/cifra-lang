@@ -1,0 +1,11 @@
+// Bateria basica: chimbal em colcheias com bumbo e caixa.
+tempo 100
+compasso 4/4
+musica {
+  trilha bateria {
+    chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 chimbal:8 |
+  }
+  trilha bateria volume 90 {
+    bumbo:4 caixa:4 bumbo:4 caixa:4 |
+  }
+}
